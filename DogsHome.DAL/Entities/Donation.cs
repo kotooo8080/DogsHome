@@ -8,7 +8,8 @@ namespace DogsHome.DAL.Entities
         public decimal Sum { get; set; }
         public string PhoneNumber { get; set; }
         public string Address { get; set; }
-
+        public bool Gift { get; set; }
+        public string GiftType { get; set; }
         public int DogId { get; set; }
         public Dog Dog { get; set; }
 
