@@ -11,14 +11,13 @@ namespace DogsHome.DAL.Repositories
         private DogRepository dogRepository;
         private DonationRepository donationRepository;
 
-        public DogsHomeUnitOfWork(string connectionString)
+        public DogsHomeUnitOfWork(DogsHomeContext context)
         {
-            db = new DogsHomeContext(connectionString);
+            db = context;
         }
         public IRepository<Dog> Dogs
         {
-            get
-            {
+            get {
                 if (dogRepository == null)
                     dogRepository = new DogRepository(db);
                 return dogRepository;
@@ -27,18 +26,14 @@ namespace DogsHome.DAL.Repositories
 
         public IRepository<Donation> Donations
         {
-            get
-            {
+            get {
                 if (donationRepository == null)
                     donationRepository = new DonationRepository(db);
                 return donationRepository;
             }
         }
 
-        public void Save()
-        {
-            db.SaveChanges();
-        }
+        public void Save() {db.SaveChanges();}
 
         private bool disposed = false;
 

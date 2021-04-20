@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DogsHome.Domain", "DogsHome
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DogsHome.BLL.Tests", "DogsHome.BLL.Tests\DogsHome.BLL.Tests.csproj", "{7A77EF63-65DA-4FD7-8788-E9653DBF89BA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DogsHome.webAPI", "DogsHome.webAPI\DogsHome.webAPI.csproj", "{9F063D94-C9A8-40F1-9461-20337BC70051}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{7A77EF63-65DA-4FD7-8788-E9653DBF89BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A77EF63-65DA-4FD7-8788-E9653DBF89BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A77EF63-65DA-4FD7-8788-E9653DBF89BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F063D94-C9A8-40F1-9461-20337BC70051}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F063D94-C9A8-40F1-9461-20337BC70051}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F063D94-C9A8-40F1-9461-20337BC70051}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F063D94-C9A8-40F1-9461-20337BC70051}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
